@@ -168,6 +168,7 @@ p {
   background: #ffffff;
   color: #002140;
   margin-top: 50px;
+  margin-bottom: 10px;
   text-align: center;
   opacity: 0;
   -webkit-animation: moveIn 1s 3.1s ease forwards;
@@ -208,6 +209,7 @@ p {
   position: relative;
   overflow: hidden !important;
   border-radius: 50%;
+  font-size: 115%;
   transition: .4s;
 }
 .profile-social-links li a i {
