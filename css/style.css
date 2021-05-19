@@ -1,198 +1,315 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir.woff2') format('woff2'),
+    url('../fonts/Vazir.woff') format('woff'),
+    url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #ecf0f3;
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Bold.woff2') format('woff2'),
+    url('../fonts/Vazir-Bold.woff') format('woff'),
+    url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
-.wrapper,
-.wrapper .img-area,
-.social-icons a,
-.buttons a {
-  background: #ecf0f3;
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Black.eot');
+    src: url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Black.woff2') format('woff2'),
+    url('../fonts/Vazir-Black.woff') format('woff'),
+    url('../fonts/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
-.wrapper {
-  margin: 30px 20px;
-  position: relative;
-  width: 350px;
-  padding: 30px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Medium.eot');
+    src: url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Medium.woff2') format('woff2'),
+    url('../fonts/Vazir-Medium.woff') format('woff'),
+    url('../fonts/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
-.wrapper .icon {
-  font-size: 17px;
-  color: #31344b;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0.7;
-  top: 15px;
-  height: 35px;
-  width: 35px;
-  text-align: center;
-  line-height: 35px;
-  border-radius: 50%;
-  font-size: 16px;
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Light.woff2') format('woff2'),
+    url('../fonts/Vazir-Light.woff') format('woff'),
+    url('../fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
-.wrapper .icon i {
-  position: relative;
-  z-index: 9;
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Thin.eot');
+    src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir-Thin.woff2') format('woff2'),
+    url('../fonts/Vazir-Thin.woff') format('woff'),
+    url('../fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
 }
-.wrapper .icon.arrow {
-  left: 15px;
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
 }
-.wrapper .icon.dots {
-  right: 15px;
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-.wrapper .img-area {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.image:hover {
+    cursor: pointer;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
-.img-area .inner-area {
-  height: calc(100% - 25px);
-  width: calc(100% - 25px);
-  border-radius: 50%;
+
+.image:hover {
+    opacity: .75;
 }
-.inner-area img {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
+
+.small {
+    font-size: 11px;
+    color: #999;
+    display: block;
+    margin-top: -10px
 }
-.wrapper .name {
-  font-size: 18px;
-  font-weight: 500;
-  color: #31344b;
-  margin: 10px 0 5px 0;
+
+.cont {
+    text-align: center;
 }
-.wrapper .about {
-  color: #44476a;
-  font-weight: 400;
-  font-size: 16px;
+
+.page-head {
+    padding: 60px 0;
+    text-align: center;
 }
-.wrapper .social-icons {
-  margin: 15px 0 25px 0;
+
+.page-head .lead {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 50px;
+    margin-top: 0;
 }
-.social-icons a {
-  position: relative;
-  height: 40px;
-  width: 40px;
-  margin: 0 5px;
-  display: inline-flex;
-  text-decoration: none;
-  border-radius: 50%;
+
+.page-head h1 {
+    font-size: 42px;
+    margin: 0 0 20px;
+    color: #FFF;
+    position: relative;
+    display: inline-block;
 }
-.social-icons a:hover::before,
-.wrapper .icon:hover::before,
-.buttons a:hover:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border-radius: 50%;
-  background: #ecf0f3;
-  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+
+.page-head h1 .version {
+    bottom: 0;
+    color: #ddd;
+    font-size: 11px;
+    font-style: italic;
+    position: absolute;
+    width: 58px;
+    right: -58px;
 }
-.buttons a:hover:before {
-  z-index: -1;
-  border-radius: 5px;
+
+.gallery > ul {
+    margin-bottom: 0;
 }
-.social-icons a i {
-  position: relative;
-  z-index: 3;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  line-height: 40px;
+
+.gallery > ul > li {
+    margin-bottom: 8px;
+    width: 190px;
+    display: inline-block;
+    margin-right: 8px;
+    list-style: outside none none;
 }
-.social-icons a.fb i {
-  color: #333;
+
+.gallery > ul > li a {
+    /*border: 2px solid #FFF;*/
+    /*border-radius: 8px;*/
+    display: block;
+    overflow: hidden;
+    position: relative;
+    float: left;
 }
-.social-icons a.twitter i {
-  color: #1da1f2;
+
+.gallery > ul > li a > img {
+    -webkit-transition: -webkit-transform 0.15s ease 0s;
+    -moz-transition: -moz-transform 0.15s ease 0s;
+    -o-transition: -o-transform 0.15s ease 0s;
+    transition: transform 0.15s ease 0s;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
 }
-.social-icons a.insta i {
-  color: #e1306c;
+
+.gallery > ul > li a:hover .gallery-poster > img {
+    opacity: 1;
+    border-radius: 6px;
 }
-.wrapper .buttons {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+
+.gallery > ul > li a .gallery-poster {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: background-color 0.15s ease 0s;
+    -o-transition: background-color 0.15s ease 0s;
+    transition: background-color 0.15s ease 0s;
+    border-radius: 6px;
 }
-.buttons a {
-  position: relative;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 12px 0;
-  color: #31344b;
-  font-size: 17px;
-  font-weight: 400;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 4;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
+
+.gallery > ul > li a .gallery-poster > img {
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -o-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+    border-radius: 6px;
 }
-.buttons a:first-child {
-  margin-right: 10px;
+
+.gallery > ul > li a:hover .gallery-poster {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
 }
-.buttons a:last-child {
-  margin-left: 10px;
+
+.gallery .justified-gallery > a > img {
+    -webkit-transition: -webkit-transform 0.15s ease 0s;
+    -moz-transition: -moz-transform 0.15s ease 0s;
+    -o-transition: -o-transform 0.15s ease 0s;
+    transition: transform 0.15s ease 0s;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
 }
-.wrapper .social-share {
-  display: flex;
-  width: 100%;
-  margin-top: 30px;
-  padding: 0 5px;
-  justify-content: space-between;
+
+.gallery .justified-gallery > a:hover .gallery-poster > img {
+    opacity: 1;
+    border-radius: 6px;
 }
-.social-share .row {
-  color: #31344b;
-  font-size: 17px;
-  cursor: pointer;
-  position: relative;
+
+.gallery .justified-gallery > a .gallery-poster {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: background-color 0.15s ease 0s;
+    -o-transition: background-color 0.15s ease 0s;
+    transition: background-color 0.15s ease 0s;
 }
-.social-share .row::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 2px;
-  background: #e0e6eb;
-  margin-left: -25px;
+
+.gallery .justified-gallery > a .gallery-poster > img {
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -o-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+    border-radius: 6px;
 }
-.row:first-child::before {
-  background: none;
+
+.gallery .justified-gallery > a:hover .gallery-poster {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
 }
-.social-share .row i.icon-2 {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  color: #31344b;
-  transform: translateY(-50%);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
+
+.gallery .video .gallery-poster img {
+    height: 48px;
+    margin-left: -24px;
+    margin-top: -24px;
+    opacity: 0.8;
+    width: 48px;
 }
-.row:nth-child(1):hover i.fa-heart,
-.row:nth-child(2):hover i.fa-comment {
-  opacity: 1;
-  pointer-events: auto;
+
+.gallery.dark > ul > li a {
+    border: 3px solid #04070a;
+}
+
+.gallery > ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.gallery > ul > li {
+    display: flex;
+    margin: 5px;
+}
+
+.persian {
+    font-family: 'Vazir', sans-serif;
+    direction: rtl;
+    letter-spacing: 0px;
+    justify-content: right;
+    text-align: right;
+}
+
+.highlight {
+    direction: ltr;
+}
+
+li > code {
+    word-break: break-all;
+    max-width: 100%;
+}
+
+.breaker {
+    word-break: break-all;
+}
+
+.post-content {
+    text-align: justify;
+}
+
+img.circle {
+    border-radius: 50%;
+    max-width: 32%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.post-info > * {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-info > p {
+    margin: 0.8em 0.4em 0.8em 0
+}
+
+.post-info > p > span {
+    margin: 0 0 0.3em 0
 }
