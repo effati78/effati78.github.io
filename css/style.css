@@ -294,11 +294,41 @@ li > code {
     text-align: justify;
 }
 
+.myImg{
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 15px;
+}
+
+.shadowImg{
+    position: absolute;
+    top: 0;
+    filter: saturate(20%) blur(5px);
+    z-index: -1;
+}
+
+.imageF:hover{
+    filter: saturate(100%);
+}
+
+.imageF:hover + .shadowImg{
+    filter: saturate(100%) blur(5px);
+}
+
+.imageF{
+    filter: saturate(20%);
+}
+
+
 img.circle {
-    border-radius: 50%;
-    max-width: 50%;
-    margin: auto;
-    padding-top: 10px;
+    border-radius: 5px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    margin: 0!important;
+    padding-top: 0!important;
 }
 
 .post-info > * {
