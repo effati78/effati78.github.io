@@ -343,3 +343,9 @@ img.circle {
 .post-info > p > span {
     margin: 0 0 0.3em 0
 }
+
+@media (min-width: 0) and (max-width: 560px){
+    .myImg{
+        width: 70%;
+    }    
+}
