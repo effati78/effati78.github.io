@@ -1,640 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="map[name:Amir Hossein SamadiPour]">
-<meta name="description" content="میلیون ها نفر از برنامه فوق العاده Spotify برای گوش دادن به موسیقی به صورت آنلاین گوش میدهند. تا حالا شده به این فکر کنید که چی میشد اگر این برنامه کمی قشنگ تر میشد؟ خب لازم نیست دیگه بیشتر فکر کنید.😅 تو این مطلب بهتون یاد میدم که چطوری اونو شخصی سازی کنید. نصب برنامه ویندوز برای نصب روی ویندوز ابتدا PowerShell رو اجرا کنید و دستور زیر را در آن اجرا کنید:" />
-<meta name="keywords" content="SamadiPour,blog,developer,personal, Tutorial, Persian, Customization" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://samadipour.github.io/posts/customize-spotify-with-spicetify-persian/" />
-
-
-    <title>
-        
-            Customize Spotify With Spicetify | Persian :: A.H. SamadiPour 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://samadipour.github.io/main.393856bf2c430bb6c01d7af07c6fe966e7cce8073435cfbbc46e590bab7405ef.css">
-
-
-    
-        <link rel="stylesheet" type="text/css" href="https://samadipour.github.io/css/style.css">
-    
-
-    
-        <link rel="stylesheet" type="text/css" href="https://samadipour.github.io/css/lightgallery.min.css">
-    
-
-
-
-
-
-<meta itemprop="name" content="Customize Spotify With Spicetify | Persian">
-<meta itemprop="description" content="نحوه شخصی سازی و نصب تم برای اسپاتیفای">
-<meta itemprop="datePublished" content="2020-07-06T14:56:44+04:30" />
-<meta itemprop="dateModified" content="2020-07-06T14:56:44+04:30" />
-<meta itemprop="wordCount" content="1168">
-<meta itemprop="image" content="https://samadipour.github.io/images/customize-spotify-with-spicetify/1.png">
-
-
-
-<meta itemprop="keywords" content="Tutorial,Persian,Customization," />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://samadipour.github.io/images/customize-spotify-with-spicetify/1.png"/>
-
-<meta name="twitter:title" content="Customize Spotify With Spicetify | Persian"/>
-<meta name="twitter:description" content="نحوه شخصی سازی و نصب تم برای اسپاتیفای"/>
-
-
-
-    <meta property="og:title" content="Customize Spotify With Spicetify | Persian" />
-<meta property="og:description" content="نحوه شخصی سازی و نصب تم برای اسپاتیفای" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://samadipour.github.io/posts/customize-spotify-with-spicetify-persian/" />
-<meta property="og:image" content="https://samadipour.github.io/images/customize-spotify-with-spicetify/1.png" />
-<meta property="article:published_time" content="2020-07-06T14:56:44+04:30" />
-<meta property="article:modified_time" content="2020-07-06T14:56:44+04:30" />
-
-
-
-
-
-
-    <meta property="article:published_time" content="2020-07-06 14:56:44 &#43;0430 &#43;0430" />
-
-
-
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://samadipour.github.io/" style="text-decoration: none;">
-    <div class="logo">
-        
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/</span>
-            <span class="logo__cursor" style=
-                  "
-                   
-                   animation-duration:1.5s;">
-            </span>
-        
-    </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://samadipour.github.io/posts/">Posts</a></li><li><a href="https://samadipour.github.io/projects/">Projects</a></li>
-    </ul>
-</nav>
-
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
-
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
-</header>
-
-
-            <div class="content">
-                
-  <main class="post">
-
-    <div class="post-info">
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
-          <circle cx="12" cy="12" r="10"></circle>
-          <polyline points="12 6 12 12 16 14"></polyline>
-        </svg>
-        6 minutes
-
-        
-      </p>
-    </div>
-
-    <article>
-      <h1 class="post-title">
-        <a href="https://samadipour.github.io/posts/customize-spotify-with-spicetify-persian/">Customize Spotify With Spicetify | Persian</a>
-      </h1>
-
-      
-
-      <div class="post-content">
-        <div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/1.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/1.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<br>
-<div class="persian">
-میلیون ها نفر از برنامه فوق العاده Spotify برای گوش دادن به موسیقی به صورت آنلاین گوش میدهند. تا حالا شده به این فکر کنید که چی میشد اگر این برنامه کمی قشنگ تر میشد؟
-خب لازم نیست دیگه بیشتر فکر کنید.😅   
-تو این مطلب بهتون یاد میدم که چطوری اونو شخصی سازی کنید.
-<h1 id="نصب-برنامه">نصب برنامه</h1>
-<h2 id="ویندوز">ویندوز</h2>
-<p>برای نصب روی ویندوز ابتدا <code>PowerShell</code> رو اجرا کنید و دستور زیر را در آن اجرا کنید:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Invoke-WebRequest -UseBasicParsing <span style="color:#e6db74">&#34;https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.ps1&#34;</span> | Invoke-Expression
-</code></pre></div><h2 id="لینوکس-و-مک">لینوکس و مک</h2>
-<p>خودتون بلدید دیگه😁</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -fsSL https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.sh | sh
-</code></pre></div><br>
-<p>برای اطمینان از نصب برنامه می‌توانید دستور زیر را اجرا کنید:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify -v
-</code></pre></div><p>اگر در نصب به مشکلی خوردید یا علاقه داشتید که روش های دیگر را ببینید، به
-<a href="https://github.com/khanhas/spicetify-cli/wiki/Installation">صفحه نصب برنامه</a>
-مراجعه کنید.</p>
-<h1 id="آماده-سازی-اولیه">آماده سازی اولیه</h1>
-<p>اگر تا الان هیچ دستوری از برنامه رو نزدید، یک بار دستور <code>spicetify</code> را در هر محیطی که هستید اجرا کنید تا فایل Config ساخته بشه.<br>
-سپس برای گرفتن بکاپ از تم اصلی اسپاتیفای و اعمال تم پیش‌فرض Spicetify، دستور زیر را اجرا کنید:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify backup apply enable-devtool
-</code></pre></div><div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery" style="display: grid; columns: 3; list-style: none; grid-auto-flow: row dense; grid-template-columns: repeat(3, 1fr); row-gap: 10px">
-            
-                <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/2.png" style="width: 90% !important;">
-                    <a href="">
-                        <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/2.png">
-                        <div class="gallery-poster">
-                            <img src="https://samadipour.github.io/img/zoom.png">
-                        </div>
-                    </a>
-                </li>
-            
-                <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/3.png" style="width: 90% !important;">
-                    <a href="">
-                        <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/3.png">
-                        <div class="gallery-poster">
-                            <img src="https://samadipour.github.io/img/zoom.png">
-                        </div>
-                    </a>
-                </li>
-            
-        </ul>
-    </div>
-</div>
-<br>
-<p>در هر زمانی که خواستید، می‌توانید با دستور زیر به تم اصلی اسپاتیفای برگردید</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify restore
-</code></pre></div><h1 id="شخصی-سازی">شخصی سازی</h1>
-<p>تمام تم های این برنامه از دو فایل مهم <code>color.ini</code> و <code>user.css</code> استفاده میکنند. ولی قبل از که با این دو فایل آشنا بشید باید درمورد فایل کانفیگ بدونید.
-آدرس این فایل رو می‌توانید به شکل زیر پیدا کنید:</p>
-</div>
-<p><strong>Windows</strong>:</p>
-<pre><code>%userprofile%\.spicetify\config.ini
-</code></pre><p><strong>MacOS</strong>:</p>
-<pre><code>~/spicetify_data/config.ini
-</code></pre><p><strong>Linux</strong>:</p>
-<pre><code>$XDG_CONFIG_HOME/.config/spicetify/config.ini
--OR-
-~/.config/spicetify/config.ini
-</code></pre><div class="persian">
-<p>اگر بازم پیداش نکردید، دستور <code>spicetify -c</code> رو بزنید تا آدرس کامل رو بهتون بگه.</p>
-<h2 id="فایل-configini">فایل Config.ini</h2>
-<p>در اینجا توضیح چند تا از پارامتر هارو میدم.</p>
-<div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/4.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/4.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<p><code>current_theme</code>: اسم پوشه تم فعلی. معمولا اسم تم پیش‌فرض خود برنامه است که در مراحل بعد قراره اونو عوض کنیم.<br>
-<code>color_scheme</code>: به کانفیگ استفاده شده از فایل <code>color.ini</code> اشاره میکند. درصورتی که خالی باشد، از اولین کانفیگ استفاده می‌کند.<br>
-<code>inject_css</code>: درصورت داشتن مقدار <code>1</code> به این معنی است که فایل <code>user.css</code> بر روی اسپاتیفای اعمال می‌شود.<br>
-<code>replace_colors</code>: درصورت داشتن مقدار <code>1</code> به این معنی است که فایل <code>color.ini</code> بر روی اسپاتیفای اعمال می‌شود.<br>
-<code>spotify_path</code>: مسیر برنامه اسپاتیفای. درصورتی که برنامه رو تو یه مسیر دیگه نصب کردید باید اینو تغییر بدید.</p>
-<p>درصورتی که علاقه دارید بدونید تمام پارامتر ها چه فایده ای دارند، دستور زیر رو بزنید.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify --help config
-</code></pre></div><h2 id="فایل-colorini">فایل color.ini</h2>
-<p>خب با یک شخصی سازی خیلی ساده شروع میکنیم.<br>
-اول از همه دستور <code>spicetify path color</code> رو بزنید تا آدرس فایل رنگی که در حال حاضر اعمال شده رو بهتون بگه.
-سپس اون فایل رو باز کنید. اگر با این آموزش پیش رفته باشید در ابتدای کار که تم پیش‌فرض هستش، دوتا کانفیگ رنگی مختلف در فایل مشاهده میکنید.
-اولی <code>Base</code> و دومی <code>Dark</code> هستش.</p>
-<p>خب برای اولین تغییر بیاین اسپاتیفای رو Dark کنیم. به فایل <code>config.ini</code> برید و فیلد <code>color_scheme</code> به شکل زیر عوض کنید:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">color_scheme <span style="color:#f92672">=</span> Dark
-</code></pre></div><p>و سپس دستور زیر را اجرا کنید:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify apply
-</code></pre></div><div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/5.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/5.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<br>
-<p>حالا بیاین یه خورده رنگ کانفیگ Dark رو عوض کنیم. برای مثال من دوتا فیلد رو به رنگ <code>212121</code> تغییر میدم</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">main_bg <span style="color:#f92672">=</span> <span style="color:#ae81ff">212121</span>
-sidebar_and_player_bg <span style="color:#f92672">=</span> <span style="color:#ae81ff">212121</span>
-</code></pre></div><p>و سپس برای اعمال تغییرات، دستور زیر را اجرا میکنم:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify apply
-</code></pre></div><div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/6.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/6.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<h2 id="فایل-usercss">فایل user.css</h2>
-<p>از اسم فایل هم معلوم هست که قراره یه خورده کار با css داشته باشیم😍😋<br>
-دستور <code>spicetify path css</code> رو بزنید تا آدرس فایل css که در حال حاضر اعمال شده رو بهتون بگه.   <br>
-اول از هم اینو بگم که برنامه Spotify کاملا با HTML CSS JS هستش و با استفاده از Chromium Embedded Framework اجرا میشه.
-پس این یعنی ما می‌توانیم با ابزار Spicetify در این فایل‌ها تغییراتی را انجام بدهیم.</p>
-<p>اگر یادتون باشه
-در آخر دستور فعال سازی <code>enable-devtool</code> داشتیم که باعث میشه ابزار Developer برنامه قابل مشاهده باشه.</p>
-<div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery" style="display: grid; columns: 3; list-style: none; grid-auto-flow: row dense; grid-template-columns: repeat(3, 1fr); row-gap: 10px">
-            
-                <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/7.png" style="width: 90% !important;">
-                    <a href="">
-                        <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/7.png">
-                        <div class="gallery-poster">
-                            <img src="https://samadipour.github.io/img/zoom.png">
-                        </div>
-                    </a>
-                </li>
-            
-                <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/8.png" style="width: 90% !important;">
-                    <a href="">
-                        <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/8.png">
-                        <div class="gallery-poster">
-                            <img src="https://samadipour.github.io/img/zoom.png">
-                        </div>
-                    </a>
-                </li>
-            
-        </ul>
-    </div>
-</div>
-<p>قبل از همه چیز باید class بخشی رو که میخوایم پیدا کنیم. می‌توانید سرچ کنید و دنبال بگردید یا اطراف اون Element ای که میخواین، راست کلیک کنید و Inspect Element رو بزنید.<br>
-برای مثال من اینجا HOME رو پیدا کردم و میخوام اونو تغییر بدم.</p>
-<div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/9.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/9.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<p>فایل <code>user.css</code> را باز میکنم و <code>Header__title-text-inner</code> رو سرچ میکنم. از اونجایی که این فایل برای تم پیش‌فرض هستش، یک سری تغییرات و کلاس هارو از قبل
-داخل خودش داره و این ممکنه توی هر تم متفاوت باشه.<br>
-اینجا فقط برای دمو، Padding و border-radius رو تغییر میدم. بعد از تغییرات دستور زیر را اجرا میکنم:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify apply
-</code></pre></div><div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/10.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/10.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<h1 id="نصب-تم">نصب تم</h1>
-<p>خب حالا که با پایه کار این برنامه رو یاد گرفتید، نوبت نصب تم‌هایی هست که بقیه درست کردند.<br>
-در ابتدا باید به
-<a href="https://github.com/morpheusthewhite/spicetify-themes">صفحه ریپازتوری تم ها</a>
-برید و تمام تم هارو دانلود کنید.</p>
-<div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/11.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/11.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<p>پس از دانلود تمام تم ها را استخراج کنید و به پوشه Theme برنامه انتقال دهید. (البته لازم نیست همه رو انتقال بدید. اگر فقط یک تم رو نیاز دارید، فقط اونو انتقال بدید.)</p>
-<p><strong>نکته</strong>: اگر نمیدونید آدرس پوشه رو نمیدونید دستور <code>spicetify path</code> رو بزنید. بخش اول آن نشان دهنده آدرس پوشه تم هست.
-<div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/12.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/12.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div></p>
-<p>اول از همه بگم که می‌توانید پوشه هر تم را باز کنید و عکس پیش نمایش هر تم رو ببینید.
-دقت داشته باشید که اسم هر تم، در واقع همان اسم پوشه است.
-برای نصب باید به صورت زیر عمل کنیم:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&lt; spicetify config current_theme THEME_NAME &gt;
-</code></pre></div><p>برای نمونه در این مرحله تم <code>CherryBlossom</code> رو نصب میکنیم:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify config current_theme CherryBlossom
-</code></pre></div><p>و برای اعمال تغییرات، دستور زیر را میزنیم:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify apply
-</code></pre></div><div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/13.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/13.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<br>
-<p>اگر یادتون باشه گفتم هر تم ممکن هست چند تا کانفیگ داشته باشه. خب این تم هم یکی از همون تم‌ها هستش! بذارید فایل <code>color.ini</code> را باز کنیم تا متوجه شوید.
-<div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/14.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/14.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div></p>
-<p>همون طور که در بالاتر هم گفتم اگر فیلد <code>color_scheme</code> رو معلوم نکنیم، اولین کانفیگ انتخاب می‌شود. برای این که در اینجا کانفیگ <code>Coral</code> رو انتخاب کنیم، دو راه داریم.
-یا فایل <code>config.ini</code> رو ویرایش کنیم و آن را تغییر بدیم یا دستور زیر را بزنیم:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify config color_scheme Coral
-</code></pre></div><p>و سپس برای اعمال تغییرات، دستور زیر را میزنیم:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify apply
-</code></pre></div><div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/15.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/15.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<h1 id="نصب-افزونه">نصب افزونه</h1>
-<p>خب تا اینجا با نحوه ادیت کردن فایل های css و color و نصب تم آشنا شدید. حالا وقتش هست بریم سراغ JS و افزونه 🙄<br>
-خود این برنامه شامل چند تا افزونه میشه که توی هر فایل یک توضیحات خلاصه و مشخصات برنامه نویس هستش. اگر شما هم دوست داشتید، می‌توانید برای اسپاتیفای افزونه درست کنید و به من بگید تا
-به این متن اضافه ش کنم😁</p>
-<p>اسم تمام افزونه‌ها در پوشه <code>spicetify-cli\Extensions</code> قابل مشاهده هستش. نحوه افزودن افزونه‌ها مشابه هم هستش.</p>
-<h2 id="افزونه-fullappdisplayjs">افزونه fullAppDisplay.js</h2>
-<p>بعد از فعال کردن این افزونه، برای شما یک آپشن اضافه می‌شود که می‌توانید آهنگ رو در حالت Full Screen مشاهده کنید. ابتدا با دستور زیر افزونه را فعال کنید:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify config extensions fullAppDisplay.js
-spicetify apply
-</code></pre></div><p>برای رفتن به حالت Full Screen بر روی آیکون اشاره شده بزنید.</p>
-<div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/17.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/17.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<p>در این مرحله حالت زیر رو مشاهده میکنید.</p>
-<div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/18.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/18.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<p>البته می‌توانید با راست کلیک در صفحه آپشن‌های دیگه رو هم ببینید و حالتش رو تغییر بدید.</p>
-<div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/19.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/19.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-<p>و در نهایت با دوبار کلیک کردن روی صفحه از این حالت خارج بشید.</p>
-<h1 id="دستورات-مهم">دستورات مهم</h1>
-<p>بازگرداندن به حالت اولیه:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify restore
-</code></pre></div><p>اعمال تغییرات انجام شده:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify apply
-</code></pre></div><p>مسیر فایل‌های مهم:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify path
-</code></pre></div><p>تمام رنگ‌های مورد استفاده در تم فعلی:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">spicetify color
-</code></pre></div><div class="cont">
-    <div class="gallery">
-        <ul class="lightgallery">
-            <li data-src="https://samadipour.github.io/images/customize-spotify-with-spicetify/20.png" style="width: 90% !important;">
-                <a href="">
-                    <img class="img-responsive" style="border-radius: 6px;" src="https://samadipour.github.io/images/customize-spotify-with-spicetify/20.png">
-                    <div class="gallery-poster">
-                        <img src="https://samadipour.github.io/img/zoom.png">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-</div>
-      </div>
-    </article>
-
-    <hr />
-
-    <div class="post-info">
-      
-    <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
-
-        <span class="tag"><a href="https://samadipour.github.io/tags/tutorial/">Tutorial</a></span>
-        <span class="tag"><a href="https://samadipour.github.io/tags/persian/">Persian</a></span>
-        <span class="tag"><a href="https://samadipour.github.io/tags/customization/">Customization</a></span>
-        
-    </p>
-
-      
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        1168 Words
-      </p>
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
-        
-          2020-07-06
-        
-
-         
-          
-        
-      </p>
-    </div>
-
-    
-
-
-    
-
-  </main>
-
-            </div>
-
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://samadipour.github.io">SamadiPour</a></span>
-            
-            
-            <span> <a href="https://samadipour.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-</footer>
-
-            
-        </div>
-
-        
-
-
-
-
-<script type="text/javascript" src="https://samadipour.github.io/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-171527287-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-
-
-    
-        <script src="https://samadipour.github.io/js/lightgallery.min.js"></script>
-    
-
-    
-        <script src="https://samadipour.github.io/js/custom.js"></script>
-    
-
-
-    </body>
-</html>
